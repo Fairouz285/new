@@ -1,0 +1,78 @@
+#lista::after{
+  font-size: 20px;
+  color: #000;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background:#f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+#lista:hover::after{
+  width: 100%;
+}
+#nav{
+  background-color:#d40000;
+}
+#contt{
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+#cont{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* (A) FIXED WRAPPER */
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+
+}
+ 
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+ 
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 40s infinite; }
+.hmove:hover { animation-play-state: paused; }
+.uka{
+  font-size: 30px;
+}
+.lead1{
+  font-size: 18px;
+}
+.lead{
+  font-size: 15px;
+}
+#hed{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+#art{
+    color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+#arty{
+  text-align: center;
+  color: #000;
+
+}
